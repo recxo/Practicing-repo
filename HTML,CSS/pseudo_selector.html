@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo selectors</title>
+    <style>
+      .container {
+        display: block;
+        margin: auto;
+        width: 200px;
+      }
+      input {
+        display: block;
+        width: 200px;
+      }
+      input[type="submit"] {
+        margin: auto;
+      }
+      li:nth-child(even){
+        color: red;
+      }
+      li:nth-child(odd){
+        color: rgb(9, 239, 235);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <input type="text" name="" id="" placeholder="Enter Your Name" />
+        <input type="" name="" id="" placeholder="Enter Your Age" />
+        <input type="email" name="" id="" placeholder="Enter Your E-mail" />
+        <input
+          type="password"
+          name=""
+          id=""
+          placeholder="Enter Your Password"
+        />
+        <input type="submit" name="" id="" />
+      </form>
+      <ul>
+        <li class="class" id="list-1">List 1</li>
+        <li class="class" id="list-2">List 2</li>
+        <li class="class" id="list-3">List 3</li>
+        <li class="class" id="list-4">List 4</li>
+        <li class="class" id="list-5">List 5</li>
+        <li class="class" id="list-6">List 6</li>
+        <li class="class" id="list-7">List 7</li>
+        <li class="class" id="list-8">List 8</li>
+        <li class="class" id="list-9">List 9</li>
+      </ul>
+    </div>
+  </body>
+</html>

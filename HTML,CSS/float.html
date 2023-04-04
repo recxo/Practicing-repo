@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .float{
+            width: 900px; border: 2px solid red ;
+            align-items: center;
+            margin: 14px auto;
+            background-color: yellowgreen;
+        }
+        .item{
+            border: 2px solid gray;
+            margin: 12px 3px ;
+            padding: 12px 3px;
+            background-color: bisque;
+        }
+        #fruits{
+            width: 48%;
+            float: left;
+        }
+        #computer{
+            width: 49%;
+            float:left;
+
+        }
+        #iphones{
+            clear: left;
+            width: 100%;
+            /* float: left; */
+        }
+        p,h3,h1{
+            /* text-align: center; */
+            /* text-align: right; */
+            /* text-align: left; */
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="float">
+        <h1>This is store</h1>
+         <div id="fruits" class="item">
+                    <H3>fruits</H3>
+                    <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, debitis?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, repudiandae dolores? Ullam neque pariatur voluptate inventore, corporis fuga iure officia deserunt voluptas consequuntur placeat corrupti voluptatum nobis laboriosam ex alias similique ipsum rem accusamus architecto nesciunt hic totam facere nulla!</p>
+         </div>
+         <div id="computer" class="item">
+                    <H3>computer</H3>
+                    <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, repudiandae dolores? Ullam neque pariatur voluptate inventore, corporis fuga iure officia deserunt voluptas consequuntur placeat corrupti voluptatum nobis laboriosam ex alias similique ipsum rem accusamus architecto nesciunt hic totam facere nulla! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit temporibus quam placeat est quas iste possimus quia consequatur, aperiam debitis officia quo velit natus molestiae libero fugit incidunt hic vitae.</p>
+         </div>
+         <div id="iphones" class="item">
+                    <H3>iphones</H3>
+                    <p id="iphonespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, debitis?</p>
+         </div>
+    </div>
+    
+</body>
+</html>

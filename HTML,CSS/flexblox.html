@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      .container {
+        height: 700px;
+        width: 100%;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        /* flex-direction is row by default*/
+        /* flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: stretch; */
+      }
+      .items {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        margin: 20px;
+        padding: 7px;
+        border: 2px solid black;
+      }
+      #item1 {
+        /* flex properties for a flex item */
+        /* order: 3;order with high values are shown after */
+        flex-grow: 3;
+      }
+      #item2 {
+        /* flex-grow: 2; */
+        /* flex-shrink: 5; */
+        flex-basis: 100px;
+        /* When flex-direction is row or column then flex-basis will control width or height respectively. */
+      }
+      #item3 {
+        /* flex-grow: 4; */
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- flexbox is a one-dimensiona layout method for laying out itmes in rows or colums. -->
+    <h1>This is Flexbox</h1>
+    <div class="container">
+      <div class="items" id="item1">First box</div>
+      <div class="items" id="item2">Second box</div>
+      <div class="items" id="item3">Third box</div>
+      <!-- <div class="items" id="item4">Fourth box</div>
+      <div class="items" id="item5">Fifth box</div>
+      <div class="items" id="item6">Sixth box</div> -->
+    </div>
+  </body>
+</html>
